@@ -1,9 +1,9 @@
-package momento;
+package memento;
 
-public class EditorState {
+public class Memento {
     private final String content;
 
-    public EditorState(String content) {
+    public Memento(String content) {
         this.content = content;
     }
 

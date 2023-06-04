@@ -1,13 +1,13 @@
-package momento;
+package memento;
 
-public class Editor {
+public class Originator {
     private String content;
 
-    public EditorState createState() {
-        return new EditorState(content);
+    public Memento createState() {
+        return new Memento(content);
     }
 
-    public void restore(EditorState state) {
+    public void restore(Memento state) {
         content = state.getContent();
     }
 

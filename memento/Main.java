@@ -1,9 +1,9 @@
-package momento;
+package memento;
 
 public class Main {
     public static void main(String[] args) {
-        Editor editor = new Editor();
-        History history = new History();
+        Originator editor = new Originator();
+        CareTaker history = new CareTaker();
         editor.setContent("a");
         history.push(editor.createState());
         editor.setContent("b");
